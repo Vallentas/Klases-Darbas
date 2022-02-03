@@ -1,9 +1,16 @@
 
-ul {
+ul{
 
-    color: blue;
-}
-ul li li:nth-child(2)
+    color: blue; }
+.first li:nth-child(2)
 {
     font-size: 100px;
+    color:red;
 }
+.third li:last-child {
+    color:red;
+}
+ul li ul li:nth-of-type(odd){
+    font-weight: bold;
+}
+
