@@ -3,26 +3,62 @@
 <head>
     <title>Kontaktai</title>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/dizainas.css">
 </head>
-<body>
+<body class="app">
 
+<header>
+    <img src="/img/logo.png" alt="LOGO" class="logo"/>
+    <nav>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a href="/">Pradzia</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/kontaktai.html">Kontaktai</a>
+        <a href="https://google.lt">Google</a>
+        <a href="https://facebook.com">FB</a>
+        <a href="https://twiter.com">Twiter</a>
+    </nav>
+</header>
+
+<aside>
+    <span>REKLAMA</span>
+</aside>
 
 <main>
-    <form action="http://localhost/kursiustiduomenis.php" method="POST">
-        <input name="vardas" type="text" id="fn" placeholder="Jūsų vardas"> <br>
-        <form action="http://localhost/kursiustiduomenis.php" method="POST">
-            <input name="el pastas" type="text" id="fn" placeholder="Jūsų el. pašto adresas"> <br>
-            <form action="http://localhost/kursiustiduomenis.php" method="POST">
-                <input name="tema" type="text" id="fn" placeholder="Žinutės tema"> <br>
-                <textarea name="message" rows="4" cols="20" id="Žinutė">Žinutė
-        </textarea> <br>
-                <input value="submit" type="submit"/>
+    <form id="kontaktai">
+        <input name="vardas" type="text" id="fn" placeholder="Vardas">
 
+        <label for="masina">Automobilis</label>
+        <select name="cars" id="masina">
+            <option value="auto1">Volvo</option>
+            <option value="auto2">Saab</option>
+            <option value="kitas3">Fiat</option>
+            <option value="a4">Audi</option>
+        </select>
 
+        <label for="zinute">Tavo Zinute man</label>
+        <textarea name="message" rows="10" cols="30" id="zinute">
+          The cat was playing in the garden.
+        </textarea>
 
+        <button type="button" onclick="alert('Hello World!')">Labas!</button>
 
+        <input value="Siųsti" type="button" id="sendForm"/>
+
+    </form>
+    <div id="atsakymas"></div>
 </main>
 
-
+<footer>
+    &copy;2022 Visos teises saugomos
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/kontaktai.js"></script>
 </body>
 </html>

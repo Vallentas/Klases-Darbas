@@ -1,0 +1,88 @@
+/*!* header *!*/
+/*header {*/
+/*    width: 100%;*/
+/*    position: fixed;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    height: 50px;*/
+/*    border-bottom: 2px solid #aaa;*/
+/*}*/
+/*#hd-title {*/
+/*    width: 250px ;*/
+/*    height: 40px;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 100%;*/
+/*    margin-top: -20px;*/
+/*    margin-left: -125px;*/
+/*    border-radius: 20px;*/
+/*    border: 2px solid #aaa;*/
+/*}*/
+
+
+
+body {
+    background-color: cadetblue;
+}
+
+/* kaire */
+#kaire {
+    position: fixed;
+    width: auto;
+    height: calc(100% - 80px) ;
+    top: 50px;
+
+}
+
+.k-option {
+    height: 40px;
+    width: 60px;
+    background: grey;
+    position: absolute;
+    left: 0;
+    transition: width 0.2s ease;
+}
+.k-option:nth-of-type(1) {
+     bottom: 20px;
+ }
+.k-option:nth-of-type(2) {
+    bottom: 70px;
+}
+.k-option:nth-of-type(3) {
+    bottom: 120px;
+}
+
+.k-option img {
+    height: 24px;
+    margin-top: 8px;
+    margin-left: 12px;
+    float: left;
+
+}
+/* Pakeisti backgroundo to mazo spalva
+.k-option:nth-of-type(1) .k-opt-stats {background: red
+}
+*/
+
+.k-opt-stats {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 7px;
+    background:#37dd92;
+}
+.k-opt-stats h2 {
+    font-size: 20px;
+    line-height: 10px;
+    position: absolute;
+    right: calc(100% + 10px);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.k-option:hover .k-opt-stats h2 {
+    opacity: 1;
+}
+.k-option:hover {
+    width: 120px;
+}
